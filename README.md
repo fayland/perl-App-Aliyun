@@ -1,14 +1,22 @@
 # NAME
 
-App::Aliyun - Blah blah blah
+App::Aliyun - Aliyun Command Tools
 
 # SYNOPSIS
 
-    use App::Aliyun;
+    $ export ALIYUN_ACCESS_KEY=mykey
+    $ export ALIYUN_ACCESS_SECRET=mysec
+    $ export ALIYUN_REGION_ID=cn-shenzhen
+
+    ### List all regions (useful to test your key/secret)
+    $ aliyun-cli-regions
+
+    ### add your public IP in the RDS whitelist for all instances
+    $ scripts/aliyun-cli-rds-whitelist-my-ip mygroupA
 
 # DESCRIPTION
 
-App::Aliyun is
+You can get your AccessId and AccessSecret from [https://ak-console.aliyun.com/](https://ak-console.aliyun.com/)
 
 # AUTHOR
 
